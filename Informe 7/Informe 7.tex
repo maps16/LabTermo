@@ -6,6 +6,7 @@
 
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage[dvipsnames]{xcolor}
 
@@ -24,8 +25,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
-\setmarginsrb{2 cm}{1 cm}{2 cm}{1.5 cm}{1 cm}{1 cm}{1 cm}{1 cm}
-
+\setmarginsrb{2 cm}{1 cm}{2 cm}{1.5 cm}{0.5 cm}{1 cm}{1 cm}{1 cm} %{izq}{up}{der}{down}{Encabezado}
 \title{Equivalente Mecánico del Calor.}
 \author{Martín Alejandro Paredes Sosa}		
 
@@ -46,42 +46,46 @@
 %====================================Titulo y Nombre================================================
 %===================================================================================================
 \begin{center}
-{ \large \bfseries \thetitle}\\
+{ \large \bfseries \thetitle}
 \end{center}
 	\begin{minipage}{\textwidth}
 		\begin{center} 
 			\theauthor 
-			\end{center}
-	\end{minipage}\\[-0.52 cm]
+		\end{center}
+\end{minipage}
 %===================================================================================================
 \begin{abstract}
-	En esta experiencia de laboratorio, se utilizo el ``\textit{Tubo de equivalente mecánico del calor}'', el cual tiene un sensor de temperatura, con el cual se midió el cambio de la temperatura en la placa de aluminio. Para tener el cambio en la temperatura, se giró el tubo con balines de acero, repetidamente, para que estos impactaran la placa. El objetivo de esto es obtener un valor numérico del equivalente mecánico del calor.
+	En esta experiencia de laboratorio, se utilizo el ``\textit{El aparato del equivalente mecánico del calor}'', el cual tiene un sensor de temperatura(termistor), con el cual se midió el cambio de la temperatura de un cilindro de aluminio incrustado en el aparato. Para medir el cambio en la temperatura, se giró la manivela, para que el cilindro rozara con hilo nylon que lo envolvía y que se ato a un contrapeso. El objetivo es obtener un valor numérico del equivalente mecánico del calor.
 
 \end{abstract}
 \vspace{-1cm}
 %===================================================================================================
 \section{Introducción}
 \vspace{-0.5cm}
-Esta experiencia en el laboratorio consistió en utilizar el ``\textit{Tubo de equivalente mecánico del calor}''. Este aparato nos permite medir la temperatura de una placa de aluminio. Cuando se le deja caer balines de acero repetidamente, la placa aumenta su temperatura levemente. El objetivo de este experimento, es demostrar los cambios en la energía gravitacional a la energía térmica y así tener un valor numérico del equivalente mecánico del calor. 
+Históricamente, tomo mucho tiempo en entender cuál era la naturaleza del calor. En un principio se pensó que este era un fluido, denominado calórico, que impregnaba los cuerpos y era responsable del calor que estos intercambiaban al estar en contacto. Para el siglo XIX, Joule ideó un experimento, donde demostraba que el calor era una forma de energía y que se podía obtener a partir de la energía mecánica. Joule se propuso demostrar que se podía elevar la temperatura del agua transfiriéndole energía mecánica. Este experimento se le conoce como ``experimento de Joule'' en el cual se determino el equivalente mecánico del calor.
 
-\hspace{0.5cm} Históricamente, tomo mucho tiempo en entender cuál era la naturaleza del calor. En un principio se pensó que este era un fluido, denominado calórico, que impregnaba los cuerpos y era responsable del calor que estos intercambiaban al estar en contacto. Para el siglo XIX, Joule ideó un experimento, donde demostraba que el calor era una forma de energía y que se podía obtener a partir de la energía mecánica. Joule se propuso demostrar que se podía elevar la temperatura del agua transfiriéndole energía mecánica. Este experimento se le conoce como ``experimento de Joule'' en el cual se determino el equivalente mecánico del calor.
+\hspace{0.5cm}Antes del experimento, se pensaba que calor y energía eran dos magnitudes diferentes, por lo que las unidades en las que se median eran distintas. El calor se medía en con la caloría y la energía en joules. Una caloría se define como la cantidad de calor necesaria para elevar la temperatura de un gramo de agua destilada desde 14.5ºC a 15.5ºC. El descubrimiento de Joule llevó a la teoría de la conservación de la energía lo que a su vez condujo al desarrollo del primer principio de la Termodinámica.
 
-\hspace{0.5cm}Antes del experimento, se pensaba que calor y energía eran dos magnitudes diferentes, por lo que las unidades en las que se median eran distintas. El calor se medía en con la caloría y la energía en joules. Una caloría se define como la cantidad de calor necesaria para elevar la temperatura de un gramo de agua destilada desde 14.5ºC a 15.5ºC. El descubrimiento de Joule llevó a la teoría de la conservación de la energía lo que a su vez condujo al desarrollo del primer principio de la Termodinámica.\vspace{-0.5cm}
+\hspace{0.5cm} Esta experiencia en el laboratorio consistió en utilizar el ``\textit{El aparato del equivalente mecánico del calor}''. Este instrumento nos permite obtener la temperatura de un cilindro de aluminio incrustado al aparato, a partir de su resistencia. Cuando se gira la manivela, el cilindro roza con hilo nylon generando un cambio en la temperatura del cilindro. El objetivo de este experimento, es demostrar los cambios en la energía mecánica a la energía en forma de calor y así tener un valor numérico del equivalente mecánico del calor.
+\pagebreak
+
 %===================================================================================================
 \section{Desarrollo Experimental}\vspace{-0.5cm}
-Primeramente, se investigaron las capacidades calorificas del aluminio y del acero, ya que la placa es de aluminio y los balines de acero. Para empezar con el experimento se midió la masa de la placa y luego la de los 60 balines. Luego se midieron las dimensiones del tubo.
+Primeramente, se investigó la capacidad calorífica del aluminio. Para empezar con el experimento se midió la masa del cilindro y del contrapeso y luego las dimensiones del cilindro.
 
 \begin{figure}[H]
 \centering
-%\includegraphics[width=0.25\linewidth ,height=5cm]{Arreglo.png}
+\includegraphics[width=0.35\linewidth ]{arregloS.png}
 \caption{Arreglo Experimental}
 \label{fig:Arreglo}
 \end{figure}
 
-Se colocó el tubo en la base mostrada en la figura \ref{fig:Arreglo}. Se conecto el termistor de respuesta rápida de la placa a la interfaz.  En DataStudio se configuro un experimento que utilizara el termistor con una frecuencia de muestreo de 20 Hz y 100 Hz. Se colocaron 60 balines dentro del tubo y se tapo. Se inició la toma de datos y se procedió a girar el tubo repetidamente. Se giro aproximadamente 4 veces por medición. 
+Una vez que se termino de medir el cilindro, se coloco en el refrigerador hasta que alcanzara una temperatura 10°C por debajo de la temperatura de la habitación. Una vez que se alcanza dicha temperatura se monta rápidamente sobre el aparato. Para montarlo, se debe insertar el cilindro al aparato y se le pone polvo de grafito, luego se enrolla con el hilo nylon dando 5 vuelta aproximadamente. El grafito se utiliza para que la cuerda se deslice sobre el cilindro. Una vez enrollado se procede a colocar el contrapeso a una distancia aproximada de 3 cm del suelo. Al mismo tiempo se conecto el termistor a la interfaz PASCO, la cual se configuro para utilizar el termistor.
 
-Se volvió a realizar el experimento, pero ahora se varió la cantidad de balines en el tubo. Primero  con 80 balines, luego se realizo con 100 y 120 balines con las mismas frecuencia de muestreo.
+Ya colocado el sistema, se tomo la temperatura ambiente y la del cilindro y se procedió girar la manivela a una velocidad constante. Cuando el cilindro alcanzo una temperatura de 10°C por arriba de la habitación, se dejo de girar. Se tomo nota del numero de vueltas y la temperatura final.
 
+Se removió el cilindro y se metió al refrigerar nuevamente para repetir el experimento.
+\pagebreak
 %===================================================================================================
 \section{Resultados}
 La tabla \ref{tab:Med} muestra las mediciones que se realizaron antes de empezar el experimento.
@@ -90,95 +94,97 @@ La tabla \ref{tab:Med} muestra las mediciones que se realizaron antes de empezar
 		\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			\textbf{Medición} & \textbf{Valor} \\ \hline
-			 Masa Placa & 1.5672$\pm$0.00003 g \\ \hline
-			 Masa de 60 balines & 20.5653$\pm$0.00003 g \\ \hline
-			 Masa de 80 balines & 27.4730$\pm$0.00003 g \\ \hline
-			 Masa de 100 balines & 34.3130$\pm$0.00003 g \\ \hline
-			 Masa de 120 balines & 41.1839$\pm$0.00003 g \\ \hline
-			 Longitud del Tubo & 90.6 $\pm$0.47cm  \\ \hline
-			 Temperatura Ambiente & 26.933$\pm$0.323°C \\ \hline
+			\textbf{Medición}				  & \textbf{Valor} 				  \\ \hline
+			Temperatura ambiente 			  & 24.1 $\pm$ 0.21 °C 			  \\ \hline
+			Calor Especifico Aluminio ($C_c$) & 0.22 $\frac{cal}{g\celsius}$  \\ \hline
+			Diámetro Cilindro 				  & 4.94 $\pm$ 0.002 cm			  \\ \hline
+			Masa Cilindro ($m$)				  & 204.23$\pm$ 0.002 g			  \\ \hline
+			Masa Contrapeso ($M$)			  & 4.38 $\pm$ 0.002 kg			  \\ \hline
 		\end{tabular}
-		\caption{Mediciones del Aparato}
+		\caption{Mediciones Previas al Experimento.}
 		\label{tab:Med}
 	\end{table}
-	
-En la figura \ref{fig:med} se muestra manera de gráfica los resultados del experimento.
 
-	\begin{figure}[H]
-		\centering
-%		\includegraphics[width = 0.75\linewidth]{medi.png}
-		\caption{Mediciones experimentales}
-		\label{fig:med}
-	\end{figure}
 
-Para obtener un equivalente es necesario obtener la energía potencial y la energía en forma de calor del proceso de girar el tubo. La energía potencial gravitacional esta dada por 
+Para obtener el trabajo que se suministro al cilindro cuando se gira la manivela es igual al torque $\tau$ que actúa en el, por angulo ($\theta$) sobre el cual el torque actúa. No es sencillo calcular el torque de la manivela, pero , como el movimiento del cilindro es aproximadamente constante, se sabe que el torque de la palanca debe balancear el torque que proviene de la fricción de la cuerda. Este se calcula:
 \begin{equation}
-\label{eq:poten}
-E_p = m_bgh
+\label{Eq:Torque}
+\tau = MgR
 \end{equation}
-donde $m_b$ es la masa de los balines que caen, $g$ es la aceleración de la gravedad y $h$ es la distancia recorrida (dos veces la longitud del tubo). Como se vario la masa (cantidad de balines), la energía potencial cambia según sea la cantidad de balines que estén en el tubo. La tabla \ref{tab:PE} muestra la energía potencial para cada caso.
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{|c|c|}
-			\hline
-			\textbf{Numero de Balines} & \textbf{Energía Potencial} ($E_p$) \\ \hline
-			60   & 0.3656  J \\ \hline
-			80   & 0.4884  J \\ \hline
-			100  & 0.6099  J \\ \hline
-			120  & 0.7321  J \\ \hline
-		\end{tabular}
-		\caption{Energía Potencial por la cantidad de balines en un giro.}
-		\label{tab:PE}
-	\end{table}
-	
-Para encontrar el calor (Q) se hace uso de la siguiente expresión:
-\begin{equation}\label{eq:Q}
-Q = (m_p c_p + m_b c_b) \Delta T
-\end{equation}
-donde $m_p$ es la masa de la placa, $c_p = 0.215 \frac{cal}{g°C}$ el calor especifico del calor especificó de la placa y $c_b = 0.114 \frac{cal}{g°C}$  el de los balines.
 
-El experimento se realizó variando la cantidad de balines. El la tabla \ref{tab:Q60} se muestra el calor calculado utilizando la ecuación \eqref{eq:Q} para cada cantidad de balines.
-	
+donde $M$ es la masa del contrapeso, $g$ la aceleración de la gravedad y $R$ el radio del cilindro. Cada vuelta completa, el torque aplicado sobre el cilindro por un ángulo de 2$\pi$. El trabajo total aplicado es:
+\begin{equation}
+\label{Eq:Work}
+W=\tau\theta = MgR(2\pi N)
+\end{equation}
+con N siendo el numero de vueltas.
+
+Utilizando la ecuación \eqref{Eq:Work} se genero la siguiente tabla:
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{|c|c|c|}
 			\hline
-			\textbf{Balines} & $\Delta$ \textbf{T} & \textbf{Calor} (Q) \\ \hline
-			60   & 0.16°C  & 0.4322 cal \\ \hline
-			80   & 0.36°C  & 1.2586 cal \\ \hline
-			100  & 0.39°C  & 1.6702 cal \\ \hline
-			120  & 0.59°C  & 2.9929 cal \\ \hline
+			\textbf{Medición} &\textbf{Vueltas} & \textbf{Trabajo $W$} \\ \hline
+			1 & 574 & 3827.65 $\pm$ 0.002 J \\ \hline
+			2 & 519 & 3460.89 $\pm$ 0.002 J \\ \hline
+			%3 & 707 & 4733.63 $\pm$ 0.002 J \\ \hline
 		\end{tabular}
-		\caption{Calor obtenido.}
-		\label{tab:Q60}
+		\caption{Calculo del Trabajo Realizado.}
+		\label{tab:WORK}
 	\end{table}
 
-La tabla \ref{tab:Comp} nos muestra la relación entre la energía potencial gravitacional y la energía en forma de calor.
-	
+Para calcular el calor generado por fricción, se determina midiendo el cambió en la temperatura. El calculo es el siguiente:
+\begin{equation}
+\label{Eq:Calor}
+Q = mC_c(T_f-T_0)
+\end{equation}
+
+Donde $m$ es la masa del cilindro, $C_c$ el calor especifico del aluminio y $T_f$ y $T_0$ son la temperatura final e inicial respectivamente.
+
+Utilizando la ecuación \eqref{Eq:Calor} se genero la siguiente tabla:
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{|c|c|c|c|}
 			\hline
-			Balines & $E_p$ & Q & $E_p$/Q\\ \hline
-			60  & 1.8280  J & 0.4322 cal & 4.2295 J/cal \\ \hline
-			80  & 6.3492  J & 1.2586 cal & 5.0447 J/cal \\ \hline
-			100 & 9.1485  J & 1.6702 cal & 5.4775 J/cal  \\ \hline
-			120 & 12.4457 J & 2.9929 cal & 4.1584 J/cal \\ \hline
-			\multicolumn{3}{|c|}{\textbf{Promedio}} & 4.7275 J/cal \\ \hline
+			\textbf{Medición} &\textbf{Temperatura $T_0$ } & \textbf{Temperatura $T_f$ }& \textbf{Calor $Q$} \\ \hline
+			1 & 13.8 $\pm$ 0.36\celsius & 35.0 $\pm$ 0.36\celsius & 952.53 $\pm$ 0.362 cal \\ \hline
+			2 & 17.1 $\pm$ 0.36\celsius & 36.2 $\pm$ 0.36\celsius & 858.17 $\pm$ 0.362 cal \\ \hline
+			%3 & 19.5 $\pm$ 0.36\celsius & 35.3 $\pm$ 0.36\celsius & 709.90 $\pm$ 0.362 cal \\ \hline
 		\end{tabular}
-		\caption{Energía Potencial transformada en calor.}
-		\label{tab:Comp}
+		\caption{Calculo del Trabajo Realizado.}
+		\label{tab:Calor}
 	\end{table}
-\pagebreak
+
+Conocidos estos valores, se puede calcular el equivalente mecánico del calor ($J$). $J$ es la relación entre el trabajo y el calor.
+\begin{equation}
+\label{Eq:J}
+J = \frac{W}{Q}
+\end{equation}
+
+Utilizando la ecuación \eqref{Eq:J} se genero la siguiente tabla:
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{Medición} & \textbf{Trabajo $W$ } & \textbf{Calor $Q$ } & \textbf{Equivalente $J$} \\ \hline
+			1 & 3827.65 $\pm$ 0.002 J & 952.53 $\pm$ 0.362 cal & 4.02 J/cal \\ \hline
+			2 & 3460.89 $\pm$ 0.002 J & 858.17 $\pm$ 0.362 cal & 4.03 J/cal \\ \hline
+			%3 & 4733.63 $\pm$ 0.002 J & 709.90 $\pm$ 0.362 cal & 6.67 \\ \hline
+			\multicolumn{3}{|c|}{\textbf{Promedio}}            & 4.03 J/cal \\ \hline
+		\end{tabular}
+		\caption{Calculo del Trabajo Realizado.}
+		\label{tab:J}
+	\end{table}
+
+
+
 %===================================================================================================
 \section{Discusión} 
-Se llego a que la equivalencia entre unidades de calor y energía es 4.7275 J/cal mientras los textos nos dicen que dicho valor es de 4.18 J/cal. Por lo tanto, el experimento nos da una buena aproximación del equivalente mecánico del calor, de hecho se tiene un 13.1\% de error. Este valor se ha calculado con diversos experimentos, y con este experimento se obtuvo un buen resultado.
+Se llego a que la equivalencia entre unidades de calor y energía es 4.03 J/cal mientras los textos nos dicen que dicho valor es de 4.18 J/cal. Por lo tanto, el experimento nos da una buena aproximación del equivalente mecánico del calor, de hecho se tiene un 3.71\% de error. Este valor se ha calculado con diversos experimentos, y con este experimento se obtuvo un buen resultado.
 
 %===================================================================================================
 \section{Conclusiones}
-Se llegó a que existe una relación entre la energía mecánica y el calor, ya que se observó un aumento en la temperatura cuando los balines colisionaban con la placa. El procedimiento que se siguió, fue adecuado, ya que nos llevo a un resultado cercano al encontrado en los textos y tablas. 
+Se llegó a que existe una relación entre la energía mecánica y el calor, ya que se observó que existe un aumento en la temperatura del cilindro cuando este gira. A este aumento se le atribuye a la fricción entre la cuerda y el cilindro. Llegamos a que 1 caloría equivale un aproximado de 4.03 J, lo que nos deja a un valor muy cercano al encontrado en los libros. 
 %================================================================================================
 
 
@@ -190,7 +196,7 @@ Se llegó a que existe una relación entre la energía mecánica y el calor, ya 
 		Serrano Fernandez, A., Martín Blas, T. (s.f.) \emph{Equivalente mecánico del calor} Recuperado el 14 de Mayo de 2017 de \url{http://acer.forestales.upm.es/basicas/udfisica/asignaturas/fisica/termo1p/joule.html}
 	
 	\bibitem{Pasco}
-		Pasco (s.f.) \textit{Mechanical Equivalent of Heat Tube} Recuperado el 14 de Mayo de 2017 de \url{www.pasco.com}
+		Pasco (s.f.) \textit{Mechanical Equivalent of Heat} Recuperado el 14 de Mayo de 2017 de \url{www.pasco.com}
 \end{thebibliography}
 %================================================================================================
 
