@@ -58,8 +58,7 @@ En esta experiencia se utilizó un aparato de eficiencia térmica para transform
 \vspace{-1cm}
 %===================================================================================================
 \section{Introducción}
-\vspace{-0.5cm}
-La eficiencia de una máquina térmica se define como:
+Esta practica consistió en identificar la eficiencia de una máquina térmica.La eficiencia de una máquina térmica se define como:
 
 \begin{equation}
 \eta = \frac{W}{Q_h}
@@ -138,7 +137,7 @@ El montaje experimental se ilustra en la siguiente figura:
 
 \begin{figure}[H]
 \begin{center}
-%\includegraphics[width=0.8\textwidth]{kk.png}  
+\includegraphics[width=0.8\textwidth]{Arreglo.png}  
 \caption{Diagrama aparato Peltier}
 \label{one}
 \end{center}
@@ -163,26 +162,25 @@ aproximadamente 2 volts.
 \section{Resultados}
 Las mediciones hechas se presentan en la siguiente tabla:
 
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|cccccccccc|}
+			\hline
+			$T_c$ (K)&$T_h$ (K)&$T_c$ ($^0C$)&$T_h$ ($^0C$) & $V_h$ (V) & $I_h$ (A) &$R_0 (\Omega)$ & $V_0 (V)$ & $P_h$ (W) & $P_W$ \\ \hline
+			275&  279.5& 3& 6.5&  2 & 0.362& 2 &0.084 &0.724 & 3.52 mW\\ \hline
+			275.9 &281.2 &2.9 &8.2 & 3& 0.546& 2& 0.091& 1.638& 4.14 mW\\ \hline
+			276.3 &285.3 &3.3 &12.3 &4 & 0.728 &2 &0.132 & 2.912& 8.712 mW\\ \hline
+			276.7 &289.7 &3.7 &16.7 &5 & 0.914 &2 &0.195 &4.57 & 0.0190 W \\ \hline
+			277.4 &295.5 &4.4 &22.5 &6 & 1.102 &2 &0.275 & 6.612 & 0.037 W\\ \hline
+		\end{tabular}
+		\caption{Mediciones}
+		\label{tab:traIso}
+	\end{table}
 
+En la siguiente tabla, se muestra el valor de la eficiencia dependiendo $V_h$:
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline
-$T_c$ (K)&$T_h$ (K)&$T_c$ ($^0C$)&$T_h$ ($^0C$) & $V_h$ (V) & $I_h$ (A) &$R_0 (\Omega)$ & $V_0 (V)$ & $P_h$ (W) & $P_W$ \\ \hline
-275&  279.5& 3& 6.5&  2 & 0.362& 2 &0.084 &0.724 & 3.52 mW\\ \hline
-275.9 &281.2 &2.9 &8.2 & 3& 0.546& 2& 0.091& 1.638& 4.14 mW\\ \hline
-276.3 &285.3 &3.3 &12.3 &4 & 0.728 &2 &0.132 & 2.912& 8.712 mW\\ \hline
-276.7 &289.7 &3.7 &16.7 &5 & 0.914 &2 &0.195 &4.57 & 0.0190 W \\ \hline
-277.4 &295.5 &4.4 &22.5 &6 & 1.102 &2 &0.275 & 6.612 & 0.037 W\\ \hline
-\end{tabular}
-\caption{Mediciones}
-\label{tab:traIso}
-\end{table}
-
-El valor de la eficiencia dependiendo $V_h$ se presenta en la siguiente tabla:
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|ccc|}
 \hline
 $V_h$ (V)& $\eta$ & $\eta_c$ \\ \hline
 2& 4.861 $ \times 10 ^{-3}$ & 0.02 \\ \hline
@@ -195,61 +193,55 @@ $V_h$ (V)& $\eta$ & $\eta_c$ \\ \hline
 \label{tab:taIso}
 \end{table}
 
-Se presenta la gráfica del inverso de la temperatura caliente vs eficiencia:
+La siguiente gráfica presenta la $\frac{1}{T_h}$ vs $\eta$:
 
-\begin{figure}[H]
-\begin{center}
-%\includegraphics[width=0.8\textwidth]{n.jpg}  
-\caption{1/th vs n}
-\label{one}
-\end{center}
-\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth , height = 10cm]{1-TvsNMal.png}  
+		\caption{$\frac{1}{T_h}$ vs $\eta$}
+		\label{nMal}
+	\end{figure}
 
-Gráfica del inverso de la temperatura caliente vs la eficiencia de Carnot:
+La siguiente gráfica presenta la $\frac{1}{T_h}$ vs $\eta_c$:
 
-\begin{figure}[H]
-\begin{center}
-%\includegraphics[width=0.8\textwidth]{nc.jpg}  
-\caption{1/th vs $n_c$}
-\label{one}
-\end{center}
-\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth , height = 10cm]{1-TvsNcMal.png}  
+		\caption{$\frac{1}{T_h}$ vs $\eta_c$}
+		\label{ncMal}
+	\end{figure}
 
 
-En las gráficas anteriores se puede observar como el primer dato no concuerda con los demás, es por esto que se quito de los resultados.
-Este error fue debido a que no se esperó el tiempo suficiente para tomar la primera medición, no esperamos a que se estabilizaran los datos de la fuente.
-Ahora se presentan las gráficas omitiendo este error.
+Se puede apreciar que hay un valor que no pertenece. Como el primer dato no concuerda con los demás, se procedió a omitir el dato en los resultados. Esto se puede deber a un error durante el experimento, ya sea no se tomo el tiempo suficiente, o un error al medir. Las siguintes graficas muestran los resultados que se obtienen omitiendo el primer dato:
 
+La siguiente gráfica presenta la $\frac{1}{T_h}$ vs $\eta$:
 
-Se presenta la gráfica del inverso de la temperatura caliente vs eficiencia:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth , height = 7cm]{1-TvsN.png}  
+		\caption{$\frac{1}{T_h}$ vs $\eta$}
+		\label{n}
+	\end{figure}
 
-\begin{figure}[H]
-\begin{center}
-%\includegraphics[width=0.8\textwidth]{l.jpg}  
-\caption{1/th vs n}
-\label{one}
-\end{center}
-\end{figure}
+La siguiente gráfica presenta la $\frac{1}{T_h}$ vs $\eta_c$:
 
-Gráfica del inverso de la temperatura caliente vs la eficiencia de Carnot:
-
-\begin{figure}[H]
-\begin{center}
-%\includegraphics[width=0.8\textwidth]{j.jpg}  
-\caption{1/th vs $n_c$}
-\label{one}
-\end{center}
-\end{figure}
-
-El promedio de la eficiencia real fue $0.0385$. \\
-El promedio de la eficiencia de Carnot fue $3.8175 \times 10^{-3}$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth , height = 7cm]{1-TvsNc.png}  
+		\caption{$\frac{1}{T_h}$ vs $\eta_c$}
+		\label{nc}
+	\end{figure}
+%===================================================================================================	
+\section{Discusiones}
+En este trabajo se observo como se relaciona la temperatura de con la eficiencia. Se observo que la eficiencia siempre fue menor a la de Carnot, como se encuentra en los libros, no tenemos una maquina que rompe la segunda Ley. También se vio que al aumentar la temperatura del foco caliente, la eficiencia de la maquina disminuye.
 %===================================================================================================
 \section{Conclusiones}
-La eficiencia disminuye linealmente al aumentar el voltaje fijo ($V_h$), de las gráficas se puede notar que la eficiencia real siempre es menor que la eficiencia de Carnot, esto debido a que la eficiencia de Carnot es la máxima eficiencia que se puede obtener. \\
+La eficiencia disminuye linealmente al aumentar el voltaje fijo ($V_h$), de las gráficas se puede notar que la eficiencia real siempre es menor que la eficiencia de Carnot, esto debido a que la eficiencia de Carnot es la máxima eficiencia que se puede obtener. 
+
 Realizando un ajuste lineal obtuvimos una recta mejor definida en el caso de la eficiencia de Carnot.
-Estos dos resultados se deben al primer teorema de Carnot que dice "No puede existir una máquina térmica que funcionando entre dos fuentes térmicas dadas tenga mayor rendimiento que una de Carnot que funcione entre esas mismas fuentes térmicas." \cite{W}
-Calculando el promedio de las eficiencias se obtuvo que la eficiencia de la máquina de Peltier es 10$\%$ la eficiencia de la máquina de Carnot.\\
-Además notamos que la temperatura del foco frío no variaba tanto
+Estos dos resultados se deben al primer teorema de Carnot que dice "No puede existir una máquina térmica que funcionando entre dos fuentes térmicas dadas tenga mayor rendimiento que una de Carnot que funcione entre esas mismas fuentes térmicas." 
+Calculando el promedio de las eficiencias se obtuvo que la eficiencia de la máquina de Peltier es 10$\%$ la eficiencia de la máquina de Carnot.
+
 Las fuentes de error fueron diversas, desde no esperar a que el sistema se estabilizara hasta cálculos érroneos de las temperaturas.
 %================================================================================================
 
@@ -258,13 +250,14 @@ Las fuentes de error fueron diversas, desde no esperar a que el sistema se estab
 
 
 \bibitem{acu}
-Acu\~na, H. (2015). \textit{Manual de Guías de Experiencias en el Laboratorio de Termodinámica Clásica}.
+Acuña, H. (2015). \textit{Manual de Guías de Experiencias en el Laboratorio de Termodinámica Clásica}.
 
 \bibitem{W}
-Wikipedia.com
+Zemansky, M., Dittman, R.(1990) \textit{Calor y Termodinámica}
 
 
 \end{thebibliography}
 %================================================================================================
+
 
 \end{document}
