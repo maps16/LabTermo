@@ -52,106 +52,116 @@
 			\end{center}
 	\end{minipage}
 %===================================================================================================
-	\begin{abstract}
-		Esta experiencia se realizaron experimento relacionados con la convección. El objetivo fue observar el fenómeno de convección natural y forzada.
-	\end{abstract}
+\begin{abstract}
+En esta experiencia se realizaron dos actividades cuyo principal objetivo era determinar el comportamiento de la radiación infrarroja y la temperatura de distintos materiales.
+\end{abstract}
+\vspace{-1cm}
 %===================================================================================================
-
 \section{Introducción}
 \vspace{-0.5cm}
-La convección es una de las tres formas de transferencia de calor. Se caracteriza porque se produce por medio de un fluido (líquido o gas) que transporta el calor entre zonas con diferentes temperaturas. La convección se produce únicamente por medio de materiales, la evaporación del agua o fluidos. La convección en sí es el transporte de calor por medio del movimiento del fluido. Por ejemplo, al trasegar mediante bombas o al calentar agua en una cacerola, el agua en contacto con la base de la cacerola asciende, mientras que el agua de la superficie, desciende y ocupa el lugar que dejó la caliente.
+La radiación a la transmisión de calor entre dos cuerpos los cuales, en un instante dado, tienen temperaturas distintas, sin que entre ellos exista contacto ni conexión por otro sólido conductor. Es una forma de emisión de ondas electromagnéticas (asociaciones de campos eléctricos y magnéticos que se propagan a la velocidad de la luz) que emana todo cuerpo que esté a mayor temperatura que el cero absoluto. 
 
 Esta experiencia se divide en dos:
+Para la primera actividad se utiliza un cubo llamado "cavidad térmica", está construido de aluminio y presenta externamente diferentes tipos de superficies en sus 4 caras laterales. Este cubo es alimentado por un amplificador de potencia con una condición fija de 10 V, esto par mantener la temperatura de las paredes del cubo.
 
-Para las dos actividades se utilizó un arreglo con una placa métalica que fue previamente calentada por contacto directo con agua a 70°C. 
+En la segunda actividad se determinará la temperatura de un filamento de tungsteno de la lámpara llamada Stefan-Boltzmann. Dicha temperatura puede ser determinada a tráves de la siguiente relación:
 
-En la primera actividad, la placa se colocó horizontal y verticalmente para medir la velocidad del cambio en su temperatura. A esto le llamaremos convección natural.
+\begin{equation}
+T = \frac{R- R_{ref}}{aR_{ref}} + T_{ref}
+\end{equation}
 
-Para la segunda actividad, se realizó el mismo procedimiento pero esta vez colocando un generador de viento a distintas velocidades. A esto le llamaremos convección forzada.
 
+donde
+\begin{itemize}
+\item R es la resistencia a la temperatura T
+\item $R_{ref}$ es la resistencia a la temperatura $T_{ref}$
+\item $\alpha$ es el coeficiente de resistividad del filamento ($\alpha = 4.5 x 10^{-3}$)
+\end{itemize}
+
+
+\vspace{-0.5cm}
 %===================================================================================================
-
 \section{Desarrollo Experimental}
 \vspace{-0.5cm}
-El desarrollo se divide en las dos actividades,:
+El desarrollo se divide en las dos actividades, comenzando con la de cavidad térmica.
 
+Para esta actividad, se cuantificó la emisión de radiación usando un sensor de infrarrojo y para la temperatura se colocó un termistor, ambos conectados a la interfaz DataStudio para observar los resultados.
 
-Actividad 1 
-Se calentaró la placa metálica por contacto directo con agua en cafetera y se colocó en posición horizontal para hacer el
-seguimiento temporal de la temperatura. Enseguida se repitió este
-procedimiento pero se colocó la placa verticalmente. En los dos
-casos se tomó lecturas por 15 minutos con una frecuencia de muestreo de 30 segundos. 
+El sensor de radiación se colocó sobre el centro de una cara del cubo aproximadamente a 2 cm de distancia y antes de comenzar a tomar mediciones se colocó un material aislante entre el cubo y el sensor para evitar que el sensor se calentara.
 
-Actividad 2 
-El generador de viento se fijó en una posición apropiada. La placa metálica se colocó horizontalmente a una distancia de 30 cm aproximadamente.
-Se realizaron mediciones de temperatura y de su variación temporal, 
-Se escogió tres velocidades de viento, para cada una de las velocidades de viento se partió de aproximadamente una misma temperatura inicial de la placa. 
-Se tomaron datos con una frecuencia de muestreo de 10 Hz durante 10 minutos con cada velocidad de viento.
+Para la segunda actividad, primero se midió la resistencia a temperatura ambiente del filamento, en el caso de la lámpara el fabricante proporciona el valor de $0.84 \Omega$.
+Después se alimentó la lámpara con un amplificador de potencia con un valor fijo de voltaje de 10 V.
+
 
 %===================================================================================================
-\pagebreak
+
 \section{Resultados}
 Los resultados también se dividen por actividad.
 
-Para la primer actividad se construyó una gráfica del comportamiento de la temperatura en el tiempo para la placa colocada horizontalmente y la cara colocada verticalmente.
+Para la primer actividad se construyó una gráfica del comportamiento de la radiación infrarroja del cubo vs la temperatura de la superficie del cubo.
+Se utilizó la cara pintada de color negro y la cara con un orificio, por lo tanto se presentan dos gráficas.
 
+Se presentan las gráficas de intensidad vs Temperatura y de de intensidad vs $T^4$
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{horizontal1.jpg}  
-\caption{Horizontal Convección Natural}
+\includegraphics[width=0.7\textwidth]{negra.jpg}  
+\caption{Intensidad vs Temperatura}
 \label{uno}
 \end{center}
 \end{figure}
 
+
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{vertical.jpg}  
-\caption{Vertical Convección Natural}
+\includegraphics[width=0.7\textwidth]{negrat4.jpg}  
+\caption{Intensidad vs $T^4$}
+\label{2}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{orificio.jpg}  
+\caption{Intensidad vs Temperatura}
 \label{uno}
 \end{center}
 \end{figure}
 
-Realizando un ajuste lineal para cada caso obtuvimos
-
-\begin{itemize}
-\item $y_h = -0.0167x +65.95$
-\item $y_v = -0.0175x +66.42$
-\end{itemize}
-
-\pagebreak
-
-Para la actividad 2 se presenta un solo gráfico de la Temperatura vs tiempo con todos los casos de las velocidades.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{34.jpg}  
-\caption{Convección Forzada}
-\label{uno}
+\includegraphics[width=0.7\textwidth]{orificiot4.jpg}  
+\caption{Intensidad vs $T^4$}
+\label{4}
 \end{center}
 \end{figure}
+Para la segunda actividad se utilizó la ecuación (1), la ley de Ohm $R=VI$ y los datos de corriente y voltaje obtenidos por DataStudio para encontrar la temperatura del filamento.
+Usando un voltaje de $6.17 V$ y una corriente de $1 A$
+$R=6.17 \Omega$ una temperatura ambiente o referencia de $27 ^0C$ y una resistencia de referencia de $0.84\Omega$
 
-Para cuantizar las diferencias entre cada velocidad realizamos un ajuste exponencial a cada uno de los casos y obtuvimos:
-
-\begin{itemize}
-\item $y_1 = 66.303 e^{-5 \times 10^{-4} x}$
-\item $y_2 = 65.661 e^{-8 \times 10^{-4} x}$
-\item $y_3 = 63.511 e^{-0.001 x}$
-\end{itemize}
-
-
-
-\begin{itemize}
-\item $V_1 = 1.2 m/s $
-\item $V_2 = 2.6 m/s $
-\item $V_3 = 6 m/s  $
-\end{itemize}
-
+$$T= 1436.05 ^0C$$
 %===================================================================================================
+\section{Discusión}
+Se puede observar de las figuras \ref{2} y \ref{4} que la intensidad de radiación tiene una relación con la $T^4$, como se se encuentra en los libros de texto. Ademas se ve que el color y la forma de la superficie de la cara alteran la radiación que se detecta. Lo que se vio fue que la intensidad de la cara negra era casi el doble que la intensidad obtenida con la cara con orificio.
 
+Para la segunda actividad se pensó que la intensidad del filamento no cambiaría tanto dependiendo del voltaje pero esto fue lo contrario a lo observado en el experimento, dado que al elevar el voltaje la intensidad de color en el filamento era cada vez mayor.
+%===================================================================================================
+\section{Conclusiones}
+Se pudo concluir que en la primera actividad la cara que absorbe más energía es la pintada de color negro dado que la intensidad obtenida con ella fue más grande.
+
+Para la segunda actividad se puede concluir que el voltaje tiene una relación directa con la temperatura del filamento esto debido a que según la ley de Ohm el voltaje es directamente proporcional a la resistencia y siguiendo la ecuación (1) la temperatura depende totalmente de la resistencia.
+
+Además sabemos que la temperatura es inversamente proporcional al coeficiente de resistividad y como este era muy pequeño obtuvimos una temperatura muy elevada.
+
+%================================================================================================	
 
 
 \begin{thebibliography}{6}
 
+\bibitem{a}
+Universidad de Sevilla(s.f.) \textit{Trabajo en termodinámica} Recuperado de:
+\url{http://laplace.us.es/wiki/index.php/Trabajo_en_termodin\%C3\%A1mica_(GIE)}
 
 \bibitem{acu}
 Acuña, H. (2015). \textit{Manual de Guías de Experiencias en el Laboratorio de Termodinámica Clásica}.
